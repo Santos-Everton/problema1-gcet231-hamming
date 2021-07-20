@@ -1,0 +1,43 @@
+# Reading pref.tcl
+# do hamming_dec_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/GCET231/problema1/decodificador {C:/GCET231/problema1/decodificador/hamming_dec.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:08 on Jul 19,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/GCET231/problema1/decodificador" C:/GCET231/problema1/decodificador/hamming_dec.sv 
+# -- Compiling module hamming_dec
+# 
+# Top level modules:
+# 	hamming_dec
+# End time: 16:45:08 on Jul 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.hamming_dec
+# vsim work.hamming_dec 
+# Start time: 16:45:20 on Jul 19,2021
+# Loading sv_std.std
+# Loading work.hamming_dec
+add wave -position end  sim:/hamming_dec/data_in
+add wave -position end  sim:/hamming_dec/ham_out
+add wave -position end  sim:/hamming_dec/p0
+add wave -position end  sim:/hamming_dec/p1
+add wave -position end  sim:/hamming_dec/p2
+force -freeze {sim:/hamming_dec/data_in[6]} 1 0
+force -freeze {sim:/hamming_dec/data_in[5]} 1 0
+force -freeze {sim:/hamming_dec/data_in[4]} 1 0
+force -freeze {sim:/hamming_dec/data_in[3]} 1 0
+force -freeze {sim:/hamming_dec/data_in[2]} 0 0
+force -freeze {sim:/hamming_dec/data_in[1]} 1 0
+force -freeze {sim:/hamming_dec/data_in[0]} 0 0
+run
+# End time: 16:46:44 on Jul 19,2021, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 0

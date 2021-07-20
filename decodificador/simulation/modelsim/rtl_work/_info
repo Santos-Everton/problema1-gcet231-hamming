@@ -1,0 +1,37 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/GCET231/problema1/decodificador/simulation/modelsim
+vhamming_dec
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1626723908
+!i10b 1
+!s100 JmVMZN0M4ARNLLOB_SfH[2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I1IzbHN:Eh7OWjX03]354?3
+VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1626723869
+8C:/GCET231/problema1/decodificador/hamming_dec.sv
+FC:/GCET231/problema1/decodificador/hamming_dec.sv
+!i122 0
+L0 1 14
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1626723908.000000
+!s107 C:/GCET231/problema1/decodificador/hamming_dec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/GCET231/problema1/decodificador|C:/GCET231/problema1/decodificador/hamming_dec.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/GCET231/problema1/decodificador
+tCvgOpt 0
