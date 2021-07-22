@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at hamming_dec.sv(14): always construct contains both blocking and non-blocking assignments File: C:/GCET231/problema1/decodificador/hamming_dec.sv Line: 14

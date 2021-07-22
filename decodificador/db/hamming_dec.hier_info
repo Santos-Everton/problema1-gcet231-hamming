@@ -2,26 +2,23 @@
 data_in[0] => p0.IN1
 data_in[0] => p1.IN1
 data_in[0] => p2.IN1
-data_in[0] => ham_out.DATAB
+data_in[0] => ham_out[0]$latch.DATAIN
 data_in[1] => p1.IN1
 data_in[1] => p2.IN1
-data_in[1] => ham_out.DATAB
+data_in[1] => ham_out[1]$latch.DATAIN
 data_in[2] => p0.IN1
 data_in[2] => p2.IN0
-data_in[2] => ham_out.DATAB
+data_in[2] => ham_out[2]$latch.DATAIN
 data_in[3] => p0.IN0
 data_in[3] => p1.IN0
-data_in[3] => ham_out.DATAB
-data_in[3] => ham_out.DATAA
+data_in[3] => ham_out[3]$latch.DATAIN
 data_in[4] => p0.IN1
-data_in[4] => ham_out.DATAA
 data_in[5] => p1.IN1
-data_in[5] => ham_out.DATAA
 data_in[6] => p2.IN1
-data_in[6] => ham_out.DATAA
-ham_out[0] <= ham_out.DB_MAX_OUTPUT_PORT_TYPE
-ham_out[1] <= ham_out.DB_MAX_OUTPUT_PORT_TYPE
-ham_out[2] <= ham_out.DB_MAX_OUTPUT_PORT_TYPE
-ham_out[3] <= ham_out.DB_MAX_OUTPUT_PORT_TYPE
+verify <= always0.DB_MAX_OUTPUT_PORT_TYPE
+ham_out[0] <= ham_out[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ham_out[1] <= ham_out[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ham_out[2] <= ham_out[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ham_out[3] <= ham_out[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 

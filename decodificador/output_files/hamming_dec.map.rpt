@@ -1,5 +1,5 @@
 Analysis & Elaboration report for hamming_dec
-Mon Jul 19 16:44:42 2021
+Thu Jul 22 16:18:04 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Jul 19 16:44:42 2021       ;
+; Analysis & Elaboration Status      ; Successful - Thu Jul 22 16:18:04 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; hamming_dec                                 ;
 ; Top-level Entity Name              ; hamming_dec                                 ;
@@ -162,17 +162,22 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jul 19 16:44:32 2021
+    Info: Processing started: Thu Jul 22 16:17:53 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off hamming_dec -c hamming_dec --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file hamming_dec.sv
     Info (12023): Found entity 1: hamming_dec File: C:/GCET231/problema1/decodificador/hamming_dec.sv Line: 1
 Info (12127): Elaborating entity "hamming_dec" for the top level hierarchy
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4702 megabytes
-    Info: Processing ended: Mon Jul 19 16:44:42 2021
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:25
+Warning (10240): Verilog HDL Always Construct warning at hamming_dec.sv(14): inferring latch(es) for variable "ham_out", which holds its previous value in one or more paths through the always construct File: C:/GCET231/problema1/decodificador/hamming_dec.sv Line: 14
+Info (10041): Inferred latch for "ham_out[0]" at hamming_dec.sv(19) File: C:/GCET231/problema1/decodificador/hamming_dec.sv Line: 19
+Info (10041): Inferred latch for "ham_out[1]" at hamming_dec.sv(19) File: C:/GCET231/problema1/decodificador/hamming_dec.sv Line: 19
+Info (10041): Inferred latch for "ham_out[2]" at hamming_dec.sv(19) File: C:/GCET231/problema1/decodificador/hamming_dec.sv Line: 19
+Info (10041): Inferred latch for "ham_out[3]" at hamming_dec.sv(19) File: C:/GCET231/problema1/decodificador/hamming_dec.sv Line: 19
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4694 megabytes
+    Info: Processing ended: Thu Jul 22 16:18:04 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:26
 
 
